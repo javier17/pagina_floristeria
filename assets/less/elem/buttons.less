@@ -1,0 +1,45 @@
+/**
+ * Buttons
+ */
+
+.btn {
+    background-color: rgba(252,226,155,1);
+    border-color: #F1AE2B;
+    color: @brand-accent;
+    transition: all 0.3s ease-out;
+    &:hover, &:focus, &:active, &:active:focus {
+        background-color: fade(#F1AE2B,90%);
+        -webkit-box-shadow: 0 0 10px #F1AE2B;
+                box-shadow: 0 0 10px #F1AE2B;
+        border-color: #F1AE2B;
+    }
+}
+
+
+/*** Sizes ***/
+
+.btn, .btn-lg {
+    font-size: (@font-size-base);
+    font-weight: 700;
+    @media(max-width: @screen-xs-max) {
+        font-size: (@font-size-base - 2px);
+    }
+}
+
+
+/*** Contextual classes ***/
+
+.btn-default {  
+    padding: 12px 25px;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+
+    @media(max-width: @screen-xs-max) {
+        padding: 8px 15px;
+    }
+    &:hover, &:active, &:focus, &:active:focus {
+        box-shadow: none;
+    }
+}

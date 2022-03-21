@@ -1,0 +1,21 @@
+/**
+ * Forms
+ */
+
+@input-bg: transparent;
+@input-border: #ccc;
+@input-border-focus: @brand-accent;
+@input-color: @brand-accent;
+@input-color-placeholder: @brand-accent;
+@input-border-radius: none;
+@input-height-base: (@line-height-computed + (@padding-base-vertical * 2) + 14);
+@form-group-margin-bottom: 10px;
+
+.form-control {
+    font-size: (@font-size-base + 2px);
+    letter-spacing: 1px;
+    option:not(selected) {
+        color: @brand-accent;
+    }
+}
+
